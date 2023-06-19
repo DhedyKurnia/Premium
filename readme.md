@@ -2,7 +2,7 @@
 ```
 apt update && apt upgrade -y && update-grub && sleep 2 && wget https://raw.githubusercontent.com/vlukss/Premium/main/sc && chmod +x sc && ./sc
 ```
-# Fitur:
+# Note:
 Ini script silahkan PM saya untuk registrasinya<br>
 Gausah recode² langsung fork aja tod<br>
 <br>
