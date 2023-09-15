@@ -1,6 +1,6 @@
 # Instalasi Script 
 ```
-apt update && apt upgrade -y && update-grub && sleep 2 && wget https://raw.githubusercontent.com/vlukss/Premium/main/sc && chmod +x sc && ./sc
+apt update && apt upgrade -y && update-grub && sleep 2 && wget https://raw.githubusercontent.com/vlukss/Premium/main/sc.sh && chmod +x sc && ./sc
 ```
 # Note:
 Ini script silahkan PM saya untuk registrasinya<br>
