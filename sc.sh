@@ -2,7 +2,7 @@ sysctl -w net.ipv6.conf.all.disable_ipv6=1
 sysctl -w net.ipv6.conf.default.disable_ipv6=1
 apt install -y bzip2 gzip coreutils screen curl
 MYIP=$(curl -sS ipv4.icanhazip.com)
-scversi=$(curl -sS https://raw.githubusercontent.com/vlukss/Premium/main/update/scriptversion | awk '{print $1}')
+scversi=$(curl -sS https://raw.githubusercontent.com/DhedyKurnia/Premium/main/update/scriptversion | awk '{print $1}')
 red='\e[1;31m'
 green='\e[0;32m'
 yell='\e[1;33m'
@@ -25,7 +25,7 @@ read -n 1 -s -r -p "  Press any key to Continue"
 clear
 CEKEXPIRED () {
 today=$(date -d +1day +%Y-%m-%d)
-Exp1=$(curl -sS https://raw.githubusercontent.com/vlukss/Registrasi/main/pelanggan | grep $MYIP | awk '{print $3}')
+Exp1=$(curl -sS https://raw.githubusercontent.com/DhedyKurnia/Registrasi/main/pelanggan | grep $MYIP | awk '{print $3}')
 if [[ $today < $Exp1 ]]; then
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$tyblue                     STATUS SCRIPT AKTIF $NC"
@@ -51,7 +51,7 @@ clear
 exit 0
 fi
 }
-IZIN=$(curl -sS https://raw.githubusercontent.com/vlukss/Registrasi/main/pelanggan | awk '{print $4}' | grep $MYIP)
+IZIN=$(curl -sS https://raw.githubusercontent.com/DhedyKurnia/Registrasi/main/pelanggan | awk '{print $4}' | grep $MYIP)
 if [[ $MYIP = $IZIN ]]; then
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green                    ⚡ INFORMASI SCRIPT ⚡ $NC"
@@ -105,7 +105,7 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 echo -e "$green       ⚡ SEDANG MENGINSTAL PERALATAN YANG DIBUTUHKAN ⚡ $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 3
-wget -q https://github.com/vlukss/Premium/raw/main/tools.sh;chmod +x tools.sh;./tools.sh
+wget -q https://github.com/DhedyKurnia/Premium/raw/main/tools.sh;chmod +x tools.sh;./tools.sh
 rm tools.sh
 clear
 clear
